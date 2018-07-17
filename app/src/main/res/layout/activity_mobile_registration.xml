@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Authentication.MobileRegistration"
+    android:background="#ccc"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:id="@+id/country_container"
+        >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/country_names"
+            android:entries="@array/country_names"
+            android:padding="10dp"
+            >
+
+        </Spinner>
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/number_edit_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/country_container"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="0555555555"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/verify_number_edit_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/number_edit_sign_up"
+        android:background="@color/white"
+        android:ems="10"
+        android:visibility="invisible"
+        android:inputType="number"
+        android:hint="Verifying code"
+        android:padding="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/missing_sgin_up_nubmber_fields_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_number_edit_sign_up"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:paddingLeft="10dp"
+        android:textColor="#ff1a1a"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/send_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/missing_sgin_up_nubmber_fields_m"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/roundedbutton_black"
+        android:text="Send code"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/continue_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_code_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/roundedbutton_black"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

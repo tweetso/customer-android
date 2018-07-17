@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:id="@+id/first_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:optRoundCardCornerRadius="10dp"
+        app:optRoundCardBackgroundColor="@color/black"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardRightBottomCorner="false"
+        app:optRoundCardBottomEdges="false"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15">
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Apple - iPhone 5c Rapier"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/request_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/device_name"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:text="#123456789012"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/request_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="330 SR."
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textAlignment="viewEnd"
+                    />
+                <TextView
+                    android:id="@+id/request_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_price"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="Assigning technician..."
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textAlignment="viewEnd"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:optRoundCardCornerRadius="10dp"
+        app:optRoundCardLeftTopCorner="false"
+        app:optRoundCardRightTopCorner="false"
+        app:optRoundCardTopEdges="false"
+        app:optRoundCardBackgroundColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/first_card"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/problem_images_grid"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:horizontalSpacing="15dp"
+                android:padding="10dp"
+                tools:listitem="@layout/problem_image_item">
+            </android.support.v17.leanback.widget.HorizontalGridView>
+
+            <TextView
+                android:id="@+id/request_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/problem_images_grid"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/cancel_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Request"
+                android:layout_below="@id/problem_images_grid"
+                android:layout_alignParentStart="true"
+                />
+
+        </RelativeLayout>
+
+
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+
+</RelativeLayout>

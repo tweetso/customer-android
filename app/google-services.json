@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "532863869608",
+    "firebase_url": "https://tweetso-865d9.firebaseio.com",
+    "project_id": "tweetso-865d9",
+    "storage_bucket": "tweetso-865d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532863869608:android:8d89d0d894535d45",
+        "android_client_info": {
+          "package_name": "com.experto.experto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532863869608-n4rgg5j4bfv31ir5qap6stp4i56m7huh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.experto.experto",
+            "certificate_hash": "6e78726ca5522c827e972ef8a408c449abde5bc5"
+          }
+        },
+        {
+          "client_id": "532863869608-6irloqepog9f19l5tu89jst12rr64m0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7OKixWQmq6JmyoY1DkozsLA2JeiKp0kA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532863869608-6irloqepog9f19l5tu89jst12rr64m0b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "532863869608-lmml9dkbr4qmuvrhra4gv25f64nor2b9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "experto",
+                "app_store_id": "1369937095"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

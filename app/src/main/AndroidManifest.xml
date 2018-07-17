@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.experto.experto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <application
+        android:allowBackup="true"
+        android:banner="@color/white"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.AppPages.ExpertoLoading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Authentication.LogIn">
+            <intent-filter>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Authentication.SignIn" android:label="Sign In"  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Authentication.SignUp" android:label="Sign Up"  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.AppPages.DeviceActivity" android:label=""  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.AppPages.ProblemActivity" android:label=""  android:screenOrientation="portrait" />
+        <activity android:name=".Activities.Authentication.Profile" android:label="Profile"  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Authentication.ChangeInfo" android:label="Edit Information"  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Authentication.MobileRegistration" android:label="Mobile Number"  android:screenOrientation="portrait" />
+        <activity android:name=".Activities.Authentication.ChangePassword" android:label="Edit password"   android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.AppPages.Home"   android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Authentication.Information" android:label="Information"  android:screenOrientation="portrait" />
+        <activity android:name=".Activities.AppPages.CompanyActivity" android:label=""   android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Authentication.ChangePhone" android:label="Edit Number"  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.AppPages.RequestActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".Activities.AppPages.Feedback" android:label="Feedback"  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.AppPages.RequestsActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA7HgWOuj0Y0atnFM7lOaENJkAOPf7ARBI" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activities.AppPages.News" android:label="News"  android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Authentication.Information"
+    android:background="@color/gray"
+    >
+    <EditText
+        android:id="@+id/full_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:background="@color/white"
+        android:hint="Full name"
+        android:padding="10dp"
+        android:layout_marginBottom="1dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/full_name_edit"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gray"
+        android:id="@+id/address_container"
+        >
+
+        <TextView
+            android:id="@+id/country_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/full_name_edit"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/city_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="City"
+            android:padding="10dp"
+            android:layout_marginLeft="1dp"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_below="@id/address_container"
+        android:id="@+id/gender_container"
+        >
+
+        <Spinner
+            android:id="@+id/gender_choice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/gender_list"
+            android:padding="10dp">
+        </Spinner>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/missing_inforamtion_fields_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_container"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:paddingLeft="10dp"
+        android:textColor="#ff1a1a"
+        android:textSize="18dp"
+        />
+
+
+    <Button
+        android:id="@+id/save_user_information_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/missing_inforamtion_fields_m"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/roundedbutton_black"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
